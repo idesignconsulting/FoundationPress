@@ -17,7 +17,7 @@ import colors        from 'ansi-colors';
 // Load all Gulp plugins into one variable
 const $ = plugins({
   postRequireTransforms: {
-    sass: (sass) => sass(require('sass'))
+    sass: (sass) => sass(require('sass-embedded'))
   }
 });
 
