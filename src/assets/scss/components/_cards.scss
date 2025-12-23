@@ -1,12 +1,10 @@
-@use 'foundation-sites/scss/foundation';
-
 .cards-container {
 
-  @include foundation.xy-grid;
+  @include xy-grid;
 
   .card {
-    @include foundation.breakpoint(small) {
-      @include foundation.xy-cell(12);
+    @include breakpoint(small) {
+      @include xy-cell(12);
 
       .card-content {
         padding: 1rem;
@@ -14,8 +12,8 @@
 
     }
 
-    @include foundation.breakpoint(medium) {
-      @include foundation.xy-cell($size: 1 of 3, $gutters: 0.7rem, $output: (base size gutters));
+    @include breakpoint(medium) {
+      @include xy-cell($size: 1 of 3, $gutters: 0.7rem, $output: (base size gutters));
 
     }
 

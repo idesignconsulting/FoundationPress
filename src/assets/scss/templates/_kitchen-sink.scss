@@ -1,7 +1,5 @@
-@use 'foundation-sites/scss/foundation';
-
 .kitchen-sink-header {
-  @include foundation.xy-cell(12);
+  @include xy-cell(12);
 }
 
 
@@ -10,22 +8,22 @@
     margin: 3rem 0;
   }
 
-  @include foundation.breakpoint(small) {
-    @include foundation.xy-cell(12);
+  @include breakpoint(small) {
+    @include xy-cell(12);
   }
 
-  @include foundation.breakpoint(large) {
-    @include foundation.xy-cell(9);
+  @include breakpoint(large) {
+    @include xy-cell(9);
   }
 }
 
 .kitchen-sink-nav {
-  @include foundation.breakpoint(small) {
+  @include breakpoint(small) {
     display: none;
   }
 
-  @include foundation.breakpoint(large) {
-    @include foundation.xy-cell(3);
+  @include breakpoint(large) {
+    @include xy-cell(3);
     display: block;
     float: right;
 
@@ -37,12 +35,12 @@
     .docs-menu-title {
       text-transform: uppercase;
       font-size: 0.75rem;
-      color: foundation.$dark-gray;
+      color: $dark-gray;
       font-weight: bold;
       line-height: 1;
       padding-left: 0.9rem;
       margin-bottom: 0.5rem;
-      border-top: 1px solid foundation.$medium-gray;
+      border-top: 1px solid $medium-gray;
       margin-top: 1rem;
       padding-top: 1.5rem;
     }
@@ -72,7 +70,7 @@
     font-size: 12px;
     line-height: 2rem;
     margin-bottom: 1.5rem;
-
+    
     .cell,:nth-child(odd) {
       background: #7bc1ef;
       color: #0a0a0a;

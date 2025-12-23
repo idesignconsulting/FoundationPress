@@ -1,14 +1,12 @@
-@use 'foundation-sites/scss/foundation';
-
 // Navigation breakpoints
 .mobile-menu,
 .site-title-bar {
-  @include foundation.hide-for(medium);
+  @include hide-for(medium);
 }
 //
 .desktop-menu,
 .site-navigation .top-bar-left {
-  @include foundation.show-for(medium);
+  @include show-for(medium);
 }
 
 // Site title
@@ -18,7 +16,7 @@
 
 // WP post navigation
 .post-navigation {
-  @include foundation.clearfix;
+  @include clearfix;
 }
 
 .nav-previous {

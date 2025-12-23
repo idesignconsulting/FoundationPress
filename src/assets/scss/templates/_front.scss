@@ -1,44 +1,43 @@
-@use 'foundation-sites/scss/foundation';
-@use "../components/dividers";
-
 // Page header
 .front-hero {
   .marketing {
-    @include foundation.xy-grid-container(55rem);
-    @include foundation.xy-grid;
+    @include xy-grid-container(55rem);
+    @include xy-grid;
   }
 
-  @include foundation.breakpoint(small) {
+  @include breakpoint(small) {
     background: url('../images/demo/hero-bg-foundation-6-small.svg') bottom center;
     background-size: cover;
-    padding: foundation.rem-calc(65%) 0;
-    margin: 0 0 foundation.rem-calc(32);
+    background-position: bottom;
+    padding: rem-calc(65%) 0;
+    margin: 0 0 rem-calc(32);
     height: auto;
     position: relative;
     text-align: left;
   }
 
-  @include foundation.breakpoint(medium) {
+  @include breakpoint(medium) {
     background: url('../images/demo/hero-bg-foundation-6-large.svg') bottom center;
     background-size: cover;
-    height: foundation.rem-calc(685);
-    margin: 0 0 foundation.rem-calc(72);
+    background-position: center;
+    height: rem-calc(685);
+    margin: 0 0 rem-calc(72);
   }
 
   .watch {
-    @include foundation.breakpoint(small) {
-      @include foundation.xy-cell(7);
+    @include breakpoint(small) {
+      @include xy-cell(7);
     }
 
-    @include foundation.breakpoint(medium) {
-      @include foundation.xy-cell(12);
+    @include breakpoint(medium) {
+      @include xy-cell(12);
     }
 
     a {
       color: #B4C9D1;
       cursor: pointer;
       font-weight: 400;
-      margin-right: foundation.rem-calc(20);
+      margin-right: rem-calc(20);
     }
 
     a:hover {
@@ -53,7 +52,7 @@
         font-weight: normal;
         text-decoration: inherit;
         color: #B4C9D1;
-        margin-right: foundation.rem-calc(8);
+        margin-right: rem-calc(8);
       }
     }
 
@@ -65,19 +64,19 @@
         font-weight: normal;
         text-decoration: inherit;
         color: #B4C9D1;
-        margin-right: foundation.rem-calc(8);
+        margin-right: rem-calc(8);
       }
     }
 
   }
 
   .tagline {
-    @include foundation.breakpoint(small) {
-      @include foundation.xy-cell(8);
+    @include breakpoint(small) {
+      @include xy-cell(8);
     }
 
-    @include foundation.breakpoint(medium) {
-      @include foundation.xy-cell(5);
+    @include breakpoint(medium) {
+      @include xy-cell(5);
       padding-top: 6rem;
     }
   }
@@ -86,11 +85,11 @@
     color: #fff;
     font-weight: 500;
 
-    @include foundation.breakpoint(small) {
+    @include breakpoint(small) {
       font-size: 2.2rem;
     }
 
-    @include foundation.breakpoint(medium) {
+    @include breakpoint(medium) {
       font-size: 2.875rem;
     }
   }
@@ -102,23 +101,23 @@
   }
 
   .download {
-    margin-top: foundation.rem-calc(20);
+    margin-top: rem-calc(20);
   }
 }
 
 // Intro
 .intro {
-  @include foundation.xy-grid-container;
-  @include foundation.xy-grid;
+  @include xy-grid-container;
+  @include xy-grid;
 
   .fp-intro {
-    @include foundation.breakpoint(small) {
-      @include foundation.xy-cell(12);
+    @include breakpoint(small) {
+      @include xy-cell(12);
     }
 
-    @include foundation.breakpoint(medium) {
-      @include foundation.xy-cell(10);
-      @include foundation.xy-cell-offset(1);
+    @include breakpoint(medium) {
+      @include xy-cell(10);
+      @include xy-cell-offset(1);
 
       h2 {
         font-weight: 300;
@@ -137,11 +136,11 @@
 
 // Section divider
 .section-divider {
-  @include foundation.xy-grid-container;
-  @include foundation.xy-grid;
+  @include xy-grid-container;
+  @include xy-grid;
 
   hr {
-    @include foundation.xy-cell(12);
+    @include xy-cell(12);
     @extend .dotted;
     box-sizing: border-box;
   }
@@ -149,12 +148,12 @@
 
 // Benefits
 .benefits {
-  @include foundation.xy-grid-container;
-  @include foundation.xy-grid;
+  @include xy-grid-container;
+  @include xy-grid;
   text-align: center;
 
   header {
-    @include foundation.xy-cell(12);
+    @include xy-cell(12);
 
     h2 {
       font-weight: 300;
@@ -171,12 +170,12 @@
   .responsive,
   .customizable,
   .professional {
-    @include foundation.breakpoint(small) {
-      @include foundation.xy-cell(12);
+    @include breakpoint(small) {
+      @include xy-cell(12);
     }
 
-    @include foundation.breakpoint(medium) {
-      @include foundation.xy-cell(3);
+    @include breakpoint(medium) {
+      @include xy-cell(3);
     }
 
     img {
@@ -196,7 +195,7 @@
   }
 
   .why-foundation {
-    @include foundation.xy-cell(12);
+    @include xy-cell(12);
     margin-top: 4rem;
   }
 }
